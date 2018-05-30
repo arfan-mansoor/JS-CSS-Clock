@@ -1,0 +1,25 @@
+JS and CSS Clock
+Date object
+You can extract the second, minute and hour of the date object by accessing it's object methods.
+seconds = now.getSeconds();
+const minutes = now.getMinutes();
+const hours = now.getHours();
+SetInterval
+This can be used to perform a function at a given interval, here, 1000 is equal to 1 second.
+(setDate, 1000);
+Style
+Use dot notation to add styles to an element extracted from the DOM.
+The HTML element with the class second-hand has been given a dynamic value.
+secondHand = document.querySelector('.second-hand');
+secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+	
+Transform-origin
+This CSS attribute can be used to determine where a given transform ‘pivots’ from.
+-origin: 100%;
+•	100% - Moves the pivot from its default position (which is the center of the element i.e 50%) to the end of the x-axis
+Transition-timing-function
+Useful for adding a custom transition effect.
+timing-function: cubic-bezier(0, 2.11, 0.58, 1);
+
+chrome dev tools to create your cubic-bezier
+
